@@ -23,6 +23,7 @@ ALLOWED_HOSTS = ["127.0.0.1", "localhost", "0.0.0.0", "[::1]"]
 # Application definition:
 
 INSTALLED_APPS: Tuple[str, ...] = (
+    "jazzmin",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -171,3 +172,11 @@ SECURE_BROWSER_XSS_FILTER = True
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
+
+
+JAZZMIN_SETTINGS = {
+    "site_header": "Training Shop",
+    "site_brand": "You order, we deliver",
+    "site_logo": "assets/imgs/theme/logo.svg",
+    "copyright": "training-shop.com",
+}
