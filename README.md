@@ -11,7 +11,7 @@ Poetry \
 #### Использовалось в проекте:
 ```bash
   * Frontend - Bootstrap 5
-  * Backend - Django 5.0.2
+  * Backend - Django 4.2.10
   * DataBases - Sqlite 3
 ```
 ## Описание проекта.
@@ -55,16 +55,18 @@ poetry run python manage.py migrate --noinput
 ```bash
 poetry run python manage.py makemigrations --noinput
 ```
-* Команда для регистрации суперпользователя базы данных - "admin". Можете заменить на желаемое.
+* Команда для регистрации суперпользователя базы данных \
+  email - "admin@example.com" \
+  password - "admin"
 ```bash
-echo "from django.contrib.auth.models import User; User.objects.filter(username='admin').exists() or User.objects.create_superuser('admin', '','admin' )" | poetry run python manage.py shell
+echo "from userauths.models import User; User.objects.filter(email='admin@example.com').exists() or User.objects.create_superuser('admin', 'admin@example.com','admin' )" | poetry run python manage.py shell
 ```
 * Команда для запуска приложения:
 ```bash
 poetry run python manage.py runserver
 ```
-> Используйте адрес: http://localhost:8000
-> Админ панель: http://localhost:8000
+> Используйте адрес: http://localhost:8000 \
+> Админ панель: http://localhost:8000/admin
 
 # Screenshots Site:
 
