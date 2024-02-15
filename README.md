@@ -6,9 +6,10 @@ Python \
 Django \
 Django-debug-toolbar \
 Django-jazzmin \
-Poetry \
-#### Проект является интернет-магазином:
-#### Использовалось в проекте:
+Poetry 
+
+
+#### Используются в проекте:
 ```bash
   * Frontend - Bootstrap 5
   * Backend - Django 4.2.10
@@ -18,10 +19,11 @@ Poetry \
 
 *  В данном e-commerce решении используются приложения:
 ```bash
-  - "core" - раздел (функционал) самого  магазина с категориями и товарами.  
+  - "core" - раздел (функционал) самого  магазина с категориями и товарами.
+  - "userauths" - приложение для регистрации и аутентификации пользователей  
 ```
 
-* Создать и перейти в директорию, которую будет скопирован проект.
+* Создать и перейти в директорию.
 ```bash
 mkdir django-project
 cd django-project
@@ -55,6 +57,12 @@ poetry run python manage.py migrate --noinput
 ```bash
 poetry run python manage.py makemigrations --noinput
 ```
+* Команда для регистрации суперпользователя базы данных  
+```bash
+poetry run python manage.py createsuperuser
+```
+### ИЛИ 
+
 * Команда для регистрации суперпользователя базы данных \
   email - "admin@example.com" \
   password - "admin"
@@ -66,7 +74,9 @@ echo "from userauths.models import User; User.objects.filter(email='admin@exampl
 poetry run python manage.py runserver
 ```
 > Используйте адрес: http://localhost:8000 \
-> Админ панель: http://localhost:8000/admin
+> Админ панель: http://localhost:8000/admin \
+> Регистрация: http://localhost:8000/sign-up \
+> Аутентификация: http://localhost:8000/sign-in
 
 # Screenshots Site:
 
