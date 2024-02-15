@@ -9,7 +9,6 @@ Django-jazzmin \
 Poetry 
 
 
-#### Используются в проекте:
 ```bash
   * Frontend - Bootstrap 5
   * Backend - Django 4.2.10
@@ -28,7 +27,7 @@ Poetry
 mkdir django-project
 cd django-project
 ```
-* Скопировать репозиторий себе на локальный компьютер
+* Скопировать репозиторий на свой локальный компьютер
 ```bash
 git clone https://github.com/kolesnikovvitaliy/ecomprj.git
 ```
@@ -49,14 +48,16 @@ source .venv/bin/activate
 
 ### Выполнить следующие команды:
 
-* Команда создания миграций приложения для базы данных
-```bash
-poetry run python manage.py migrate --noinput
-```
 * Команда для регистрации статистических файлов приложения 
 ```bash
 poetry run python manage.py makemigrations --noinput
 ```
+
+* Команда создания миграций приложения для базы данных
+```bash
+poetry run python manage.py migrate --noinput
+```
+
 * Команда для регистрации суперпользователя базы данных  
 ```bash
 poetry run python manage.py createsuperuser
