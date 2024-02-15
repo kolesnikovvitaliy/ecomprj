@@ -23,15 +23,20 @@ ALLOWED_HOSTS = ["127.0.0.1", "localhost", "0.0.0.0", "[::1]"]
 # Application definition:
 
 INSTALLED_APPS: Tuple[str, ...] = (
+    # Admin Panels
     "jazzmin",
+
+    # Standard App
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
     # Custom Apps
     "core",
+    "userauths"
 )
 
 MIDDLEWARE: Tuple[str, ...] = (
