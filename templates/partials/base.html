@@ -22,7 +22,7 @@
 
 <body>
     <!-- Modal -->
-    <div class="modal fade custom-modal" id="onloadModal" tabindex="-1" aria-labelledby="onloadModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade custom-modal" id="onloadModal" tabindex="-1" aria-labelledby="onloadModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Quick view -->
     <div class="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -348,9 +348,15 @@
                                             <li>
                                                 <a href="page-account.html"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a>
                                             </li>
+                                            {% if request.user.is_authenticated %}
                                             <li>
-                                                <a href="page-login.html"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a>
+                                                <a href="{% url 'userauths:sign-out'%}"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a>
                                             </li>
+                                            {% else %}
+                                            <li>
+                                                <a href="{% url 'userauths:sign-in'%}"><i class="fi fi-rs-sign-out mr-10"></i>Sign in</a>
+                                            </li>
+                                            {% endif %}
                                         </ul>
                                     </div>
                                 </div>

@@ -36,7 +36,7 @@ INSTALLED_APPS: Tuple[str, ...] = (
 
     # Custom Apps
     "core",
-    "userauths"
+    "userauths",
 )
 
 MIDDLEWARE: Tuple[str, ...] = (
@@ -153,10 +153,10 @@ MEDIA_ROOT = BASE_DIR.joinpath("media")
 # Security
 # https://docs.djangoproject.com/en/4.2/topics/security/
 
-SESSION_COOKIE_HTTPONLY = True
-CSRF_COOKIE_HTTPONLY = True
-SECURE_CONTENT_TYPE_NOSNIFF = True
-SECURE_BROWSER_XSS_FILTER = True
+# SESSION_COOKIE_HTTPONLY = True
+# CSRF_COOKIE_HTTPONLY = True
+# SECURE_CONTENT_TYPE_NOSNIFF = True
+# SECURE_BROWSER_XSS_FILTER = True
 
 # X_FRAME_OPTIONS = "DENY"
 
@@ -185,3 +185,6 @@ JAZZMIN_SETTINGS = {
     "site_logo": "assets/imgs/theme/logo.svg",
     "copyright": "training-shop.com",
 }
+
+# LOGOUT_REDIRECT_URL = "/admin"  # anywhere you like
+AUTH_USER_MODEL = 'userauths.User'
