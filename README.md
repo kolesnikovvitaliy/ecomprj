@@ -71,12 +71,23 @@ poetry run python manage.py runserver
 # Screenshots Site:
 
 <div class="img-div">
-  <img src="https://github.com/kolesnikovvitaliy/ecomprj/blob/main/docs/img/scrin_site.png" width="800"/>
+  <img src="https://github.com/kolesnikovvitaliy/ecomprj/blob/main/docs/img/screenshot_site.png" width="800"/>
 </div>
 
 # Screenshots Admin:
 
 <div class="img-div">
-  <img src="https://github.com/kolesnikovvitaliy/ecomprj/blob/main/docs/img/scrin_admin.png" width="800"/>
+  <img src="https://github.com/kolesnikovvitaliy/ecomprj/blob/main/docs/img/screenshot_admin_.png" width="800"/>
 </div>
 
+# Screenshots Sign-up
+
+<div class="img-div">
+  <img src="https://github.com/kolesnikovvitaliy/ecomprj/blob/main/docs/img/screenshot_sign-up_.png" width="800"/>
+</div>
+
+# Screenshots Sign-in
+
+<div class="img-div">
+  <img src="https://github.com/kolesnikovvitaliy/ecomprj/blob/main/docs/img/screenshot_sign-in_.png" width="800"/>
+</div>
