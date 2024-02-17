@@ -25,6 +25,7 @@ class ProductAdmin(admin.ModelAdmin):
         "price",
         "featured",
         "product_status",
+        "vendor",
     ]
 
 
