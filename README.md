@@ -85,6 +85,13 @@ poetry run python manage.py runserver
   <img src="https://github.com/kolesnikovvitaliy/ecomprj/blob/main/docs/img/screenshot_site.png" width="800"/>
 </div>
 
+# Database Diagram
+
+<div class="img-div">
+  <img src="https://github.com/kolesnikovvitaliy/ecomprj/blob/main/docs/img/db.png" width="800"/>
+</div>
+
+
 # Screenshots Admin:
 
 <div class="img-div">
